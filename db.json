@@ -1,53 +1,20 @@
 {
   "chars": [
     {
-      "name": "y",
-      "salary": "6",
+      "name": "Александр",
+      "salary": "123213",
       "isPromote": false,
       "action": "ADD",
+      "JSONkey": 5,
       "id": 1
-    },
-    {
-      "name": "5",
-      "salary": "5",
-      "isPromote": false,
-      "action": "ADD",
-      "id": 2
-    },
-    {
-      "name": "5",
-      "salary": "5",
-      "isPromote": false,
-      "action": "DELETE",
-      "id": 3
-    },
-    {
-      "name": "y",
-      "salary": "6",
-      "isPromote": false,
-      "action": "DELETE",
-      "id": 4
     },
     {
       "name": "Grigory Lyakhov",
       "salary": 3000,
       "isPromote": true,
       "action": "PROMOTE",
-      "id": 5
-    },
-    {
-      "name": "Grigory Lyakhov",
-      "salary": 3000,
-      "isPromote": false,
-      "action": "PROMOTE",
-      "id": 6
-    },
-    {
-      "name": "Vito Scaletta",
-      "salary": 1000,
-      "isPromote": false,
-      "action": "DELETE",
-      "id": 7
+      "JSONkey": 6,
+      "id": 2
     }
   ]
 }
