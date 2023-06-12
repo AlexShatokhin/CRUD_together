@@ -10,7 +10,7 @@ while True:
     dict = json.load(f)
     if dict["chars"][0]:
         if dict["chars"][0]["action"] == 'ADD':
-            add_person(dict["chars"][0]["id"], dict["chars"][0]["name"], dict["chars"][0]["salary"], int(dict["chars"][0]['isPromote']))
+            add_person(dict["chars"][0]["JSONkey"], dict["chars"][0]["name"], dict["chars"][0]["salary"], int(dict["chars"][0]['isPromote']))
         dict["chars"].pop(0)
         text = str(dict).replace('\'','\"').replace('False', '0').replace('True', '1')
 
