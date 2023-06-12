@@ -1,4 +1,20 @@
 {
   "chars": [
+        {
+      "name": "Александр",
+      "salary": "123213",
+      "isPromote": false,
+      "action": "ADD",
+      "JSONkey": 5,
+      "id": 1
+    },
+    {
+      "name": "Grigory Lyakhov",
+      "salary": 3000,
+      "isPromote": true,
+      "action": "PROMOTE",
+      "JSONkey": 6,
+      "id": 2
+    }
   ]
 }

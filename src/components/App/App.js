@@ -30,7 +30,8 @@ class App extends Component {
 			chosenPerson: {},
 			filter: "default",
 			searchInput: "",
-			idKey: 6
+			idKey: 6,
+			JSONkey: 0
 		}
 	}
 
@@ -68,17 +69,17 @@ class App extends Component {
 				}
 					
 				return item;
-			})
+			}),
+			JSONkey: this.state.JSONkey + 1
 		})
 
+		itemToPost.JSONkey = this.state.JSONkey;
 		PostToData(itemToPost, "PROMOTE")
 
 	}
 
 	onAddEmployer = (name, salary, isPromote) => {
 		let itemToPost = {name, salary, isPromote};
-
-		PostToData(itemToPost, "ADD");
 
 		const newEmp = {
 			name,
@@ -90,26 +91,32 @@ class App extends Component {
 		}
 		this.setState({
 			data: [...this.state.data, newEmp],
-			idKey: this.state.idKey + 1
+			idKey: this.state.idKey + 1,
+			JSONkey: this.state.JSONkey + 1
 		})
+
+		itemToPost.JSONkey = this.state.JSONkey
+		PostToData(itemToPost, "ADD");
 	}
 
 	onDeleteEmployer = (id) => {
 		let itemToPost;
 
 		const newData = this.state.data.filter((item) => {
-			if(item.id != id)
+			if(item.id != id){
 				return item;
-			else{
-				itemToPost = item;
-			}
+			} else
+			itemToPost = item;
+				
 		});
 
 
 		this.setState({
-			data: newData
+			data: newData,
+			JSONkey: this.state.JSONkey + 1
 		})
 
+		itemToPost.JSONkey = this.state.JSONkey
 		PostToData(itemToPost, "DELETE");
 
 	}
