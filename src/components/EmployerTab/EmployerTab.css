@@ -1,0 +1,38 @@
+.employer_tab{
+    position: absolute;
+    width: 450px;
+    min-height: 100vh;
+    border: 1px solid rgba(100, 100, 111, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    padding-top: 150px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 0;
+    left: 0;
+    transition: 1s all;
+}
+
+.employer_tab_name, .employer_tab_salary{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+}
+
+span{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.employer_tab_promotion{
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 500;
+    color: green;
+    margin-top: 20px;
+}
+
+hr{
+    margin: 50px 0;
+    border: 1px solid rgba(100, 100, 111, 0.5);
+}

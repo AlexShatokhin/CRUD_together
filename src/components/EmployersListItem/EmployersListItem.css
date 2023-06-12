@@ -1,0 +1,100 @@
+.employers_list_item{
+    position: relative;
+    width: 250px;
+    min-height: 300px;
+    border: 1px solid rgba(100, 100, 111, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 15px;
+}
+
+
+.employer_name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.employer_salary{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.promotion_image{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    bottom: 5px;
+    opacity: 0;
+    transition: .5s all;
+}
+
+.promotion_image_active{
+    opacity: 1;
+    bottom: 17px;
+    transition: .5s all;
+}
+
+.employer_menu{
+    position: absolute;
+    width: 15px;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.employer_menu span{
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    background: #000000;
+    border-radius: 100%;
+}
+
+.employer_menu:hover span{
+    margin-bottom: 3px;
+    transition: .3s all;
+}
+
+.dropdown_wrapper{
+    width: 120px;
+    min-height: 70px;
+    position: absolute;
+    background: #ffffff;
+    right: 45px;
+    top: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(100, 100, 111, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dropdown_wrapper ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown_wrapper li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.dropdown_wrapper li:hover{
+    background: #e1e1e1;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.employer_active{
+    background-color: #fffcc3;
+    box-shadow: rgba(242, 255, 127, 1) 0px 7px 29px 0px;
+}

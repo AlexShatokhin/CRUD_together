@@ -1,0 +1,18 @@
+.logic_components{
+	display: flex;
+	align-items: center;
+	min-width: 600px;
+}
+
+.search_employer{
+	margin: 30px 0 0 15px;
+	width: 300px;
+	border-radius: 5px;
+	border: 1px solid #3c3c3c;
+	padding-left: 10px;
+}
+
+.search_employer:focus{
+    border: 1px solid rgba(100, 100, 111, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

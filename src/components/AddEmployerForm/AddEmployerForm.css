@@ -1,0 +1,53 @@
+.form_wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.popup{
+    position: relative;
+    width: 450px;
+    min-height: 200px;
+    margin: 0 auto;
+    margin-top: 120px;
+    background-color: #f2f3f4;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;  
+}
+
+.form_content{
+    margin-top: 30px;
+}
+
+.btn_form{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.close_btn{
+    position: absolute;
+    right: -40px;
+    top: -20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #d40000;
+}
+
+.close_btn:hover{
+    font-size: 40px;
+    top: -28px;
+    right: -45px;
+    transition: .2s all;
+}
