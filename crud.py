@@ -4,7 +4,8 @@ conn = sqlite3.connect('db.db')
 
 sql = conn.cursor()
 
-def create(x):
-    print(x)
-    sql.execute("insert into persons values(?, ?, ?, ?)", x)
+
+def add_person(*args):
+    print(args)
+    sql.execute("insert into persons values(?, ?, ?, ?)", args)
     conn.commit()
