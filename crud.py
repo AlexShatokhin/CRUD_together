@@ -14,3 +14,5 @@ def add_person(*args):
 def delete_person(id):
     print(id, ' - delete')
     sql.execute("delete from persons where id=?", id)
+
+
