@@ -14,7 +14,9 @@ while True:
         elif dict["chars"][0]["action"] == 'DELETE':
             delete_person(dict["chars"][0]["JSONkey"])
         elif dict["chars"][0]["action"] == 'PROMOTE':
-            promote_person(dict["chars"][0]["JSONkey"], int(dict["chars"][0]['isPromote'])
+            promote_person(dict["chars"][0]["JSONkey"], int(dict["chars"][0]['isPromote']))
+
+
         dict["chars"].pop(0)
         text = str(dict).replace('\'','\"').replace('False', '0').replace('True', '1')
 
