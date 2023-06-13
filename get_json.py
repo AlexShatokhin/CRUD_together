@@ -1,6 +1,6 @@
 import json
 import time
-from crud import add_person, delete_person
+from crud import add_person, delete_person, promote_person
 
 PATH = 'db.json'
 
@@ -14,7 +14,7 @@ while True:
         elif dict["chars"][0]["action"] == 'DELETE':
             delete_person(dict["chars"][0]["JSONkey"])
         elif dict["chars"][0]["action"] == 'PROMOTE':
-
+            promote_person(dict["chars"][0]["JSONkey"], int(dict["chars"][0]['isPromote'])
         dict["chars"].pop(0)
         text = str(dict).replace('\'','\"').replace('False', '0').replace('True', '1')
 
